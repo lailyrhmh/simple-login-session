@@ -15,6 +15,7 @@ function login($nip, $password)
     else
     {
         header("Location: formLogin.php?pesan=gagal");
+        exit();
     }
     return $result;
 }
